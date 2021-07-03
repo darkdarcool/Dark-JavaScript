@@ -1,0 +1,24 @@
+import Callout from 'nextra-theme-docs/callout'
+
+
+# References
+
+* Use `const`(contants) whenever possible, limit your `var` usage. 
+
+``` javascript 
+// Bad >:(
+var num1 = 1;
+var num2 = 10;
+
+// good :)
+const num1 = 1;
+const num2 = 10;
+```
+
+<Callout>
+`let` is also a better keyword than `var`, as it is the same as const(it being only accesible in it's block), except the variable declared with `let` can be edited!
+</Callout>
+
+* If you reassing a variables value, make sure to use `let` instead of `var`.
+
+> The reason? `let` is blocked-scoped rather than function scoped
