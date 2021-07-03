@@ -1,19 +1,27 @@
 {
-  "name": "nextjs-mdx-js",
+  "name": "nextra",
   "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "dev": "npx next",
+    "start": "next start",
+    "build": "next build"
   },
+  "author": "Shu Ding",
+  "license": "MIT",
   "dependencies": {
-    "@mdx-js/loader": "1.4.5",
-    "@next/mdx": "9.0.5",
-    "next": "latest",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "next": "^11.0.1",
+    "nextra": "^0.4.1",
+    "nextra-theme-docs": "^1.1.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
-  "license": "ISC",
-  "keywords": [],
-  "description": ""
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
 }

@@ -1,0 +1,37 @@
+import Callout from 'nextra-theme-docs/callout'
+
+
+# Types
+
+* **Primitives**: Acessing a primitive and editing it's value
+
+If you wish to use a variables value by copying it's value to another variable, you work directly to it's value like the following:
+
+``` javascript 
+const var1 = 1;
+let var2 = var1;
+var2 = 2;
+
+console.log(var1, var2); // => 1 2
+```
+
+* **Complex**: When you assign a variable to another variables with an array as it's data, that variable can then edit the other variables array:
+
+```
+const foo = [1, 2];
+const bar = foo;
+
+bar[0] = 9;
+
+console.log(foo[0], bar[0]); // => 9, 9
+```
+
+<Callout>
+  If you wish to copy an array, use a `...` spread like the following: 
+  ``` javascript 
+  var foo = [1, 2, 3];
+  var bar = [...foo]
+  bar[0] = 10;
+  console.log(foo, bar); // => [ 1, 2, 3 ] [ 10, 2, 3 ]
+  ```
+</Callout>
